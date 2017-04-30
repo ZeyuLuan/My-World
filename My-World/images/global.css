@@ -1,0 +1,126 @@
+html,body{margin:0;background:#e1e1e1;font-family:"微软雅黑";}
+
+/* 首页 */
+.home{position:relative;}
+
+/* 顶部LOGO */
+.logo{width:100%;height:90px;background:rgba(0,0,0,0.6);text-align:center;position:absolute;top:0px;left:0px;z-index:123567;}
+.logo img{margin-top:15px;}
+
+/* 首页Banner */
+.focus{width:100%;height:100%;overflow:hidden;position:relative;}
+.focus .point{position:absolute;bottom:0px;left:0px;width:100%;height:50px;z-index:123;text-align:center;}
+.focus .point a{display:inline-block;width:22px;height:22px;background:rgba(255,255,255,0.4);border-radius:22px;margin:0 20px;}
+.focus .point a.c{background:rgb(255,255,255);}
+.focus .image{position:relative;width:100%;height:100%;}
+.focus .pano{position:relative;width:100%;height:100%;}
+.focus .pano iframe{width:100%;height:100%;border:0px;}
+.focus .fore{
+  display:block;width:100%;height:100%;position:absolute;z-index:12;text-align:center;
+  background-repeat:no-repeat;background-position:center;
+          transition:all 1s ease-out 0s;opacity: 0;transform: rotate(0deg) scale(1, 1) translateY(-100px);
+  -webkit-transition:all 1s ease-in 0s;-webkit-transform: rotate(0deg) scale(1, 1) translateY(-100px);
+     -moz-transition:all 1s ease-in 0s;   -moz-transform: rotate(0deg) scale(1, 1) translateY(-100px);
+      -ms-transition:all 1s ease-in 0s;    -ms-transform: rotate(0deg) scale(1, 1) translateY(-100px);       
+       -o-transition:all 1s ease-in 0s;     -o-transform: rotate(0deg) scale(1, 1) translateY(-100px);
+}
+.focus .swiper-slide-active .fore{
+  opacity: 1;
+  -webkit-transform: rotate(0deg) scale(1, 1) translateY(0px);
+     -moz-transform: rotate(0deg) scale(1, 1) translateY(0px);
+      -ms-transform: rotate(0deg) scale(1, 1) translateY(0px);
+       -o-transform: rotate(d0eg) scale(1, 1) translateY(0px);
+          transform: rotate(0deg) scale(1, 1) translateY(0px);
+}
+.focus .fore img{position:relative;top:40%;}
+.focus .back{position:absolute;z-index:1;width:100%;height:100%;text-align:center;}
+
+/* 导航菜单 */
+.nav{width:100%;z-index:1235;zoom:1;overflow:hidden;bottom:0px;left:0px;position:fixed;}
+.nav a{float:left;width:20%;height:100px;text-align:center;text-decoration:none;color:#000;cursor:pointer;background-color:#154B97
+
+;background-position:center;background-repeat:no-repeat;}
+.nav a b{display:block;font-weight:normal;font-size:20px;margin-top:30px;}
+.nav a i{display:block;font-style:normal;font-size:12px;}
+.nav a.c{background-color:#6B708B;color:#000;}
+
+/* 作品 */
+.case{position:relative;}
+
+/* APP列表 */
+.list{width:100%;position:relative;margin-bottom:120px;}
+.list .app{
+  border-radius:3px;
+  border-top-left-radius:6px;
+  border-top-right-radius:6px;
+  box-shadow:0 1px 2px 0 rgba(0, 0, 0, 0.22);
+  width:290px;
+  margin:20px 0 0 20px;
+  background:#fff;
+}
+.list .app .image{border-top-left-radius:6px;border-top-right-radius:6px;}
+.list .app .image a{display:block;border-top-left-radius:6px;border-top-right-radius:6px;}
+.list .app .image img{border-top-left-radius:6px;border-top-right-radius:6px;}
+.list .app .info{border-bottom-left-radius:3px;border-bottom-right-radius:3px;font-size:20px;padding-bottom:10px;}
+.list .app .info p{margin:10px 10px 0 10px;}
+.list .app .info p.name{font-size:22px;color:#343434;}
+.list .app .info p.customer{color:
+#154B97;font-size:20px;}
+.list .app .info p.tag{font-size:20px;color:#7b7b7b;border-top:1px solid #e7e7e7;padding:12px 10px 5px 10px;margin:15px 0 0 0;}
+
+
+/**** Isotope Filtering ****/
+.isotope-item {z-index: 2;}
+.isotope-hidden.isotope-item {pointer-events:none;z-index:1;}
+/**** Isotope CSS3 transitions ****/
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+/**** disabling Isotope CSS3 transitions ****/
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* 返回顶部 */
+.gotop {
+  position:fixed;bottom:150px;right:-120px;width:94px;height:94px;z-index:9999;
+  -webkit-transition:all 1s ease 0s;
+     -moz-transition:all 1s ease 0s;
+      -ms-transition:all 1s ease 0s;
+       -o-transition:all 1s ease 0s;
+          transition:all 1s ease 0s;
+}
+.gotop_on {
+  right:8px;
+  -webkit-transform:rotate(-360deg);
+     -moz-transform:rotate(-360deg);
+      -ms-transform:rotate(-360deg);
+       -o-transform:rotate(-360deg);
+          transform:rotate(-360deg);
+}
+.gotop .bttbg {width:94px;height:94px;background:url(gotop.png) no-repeat scroll 0 0 transparent;}

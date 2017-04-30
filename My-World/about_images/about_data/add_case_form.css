@@ -1,0 +1,51 @@
+body {
+	background-color: #F4F3EF;
+}
+
+body h1 {
+	text-align: center;
+	font-family: "微软雅黑";
+	color: #3D3D3D;
+}
+
+.case_info {
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  height: 330px;
+  box-shadow: 5px 5px 5px gray;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #A2B964;
+}
+
+.case_info form {
+	margin-top: 65px;
+	margin-left: 180px;
+}
+
+.case_info label {
+    width:110px;
+    float:left;
+    /*font-size:12px;*/
+   	font-size: 120%;
+    line-height:24px;
+    font-weight:bold;
+
+}
+
+.case_info input {
+    width:300px;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:5px 10px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+}
+
+#submit {
+	width: 70px;
+	margin-top: 10px;
+	margin-left: 230px;
+	text-align: center;
+}
